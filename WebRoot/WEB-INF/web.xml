@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<servlet>
+		<servlet-name>PublishServlet</servlet-name>
+		<servlet-class>core.PublishServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublishServlet</servlet-name>
+		<url-pattern>/core/PublishServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>MoodListServlet</servlet-name>
+		<servlet-class>core.MoodListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MoodListServlet</servlet-name>
+		<url-pattern>/core/MoodListServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SearchServlet</servlet-name>
+		<servlet-class>core.SearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchServlet</servlet-name>
+		<url-pattern>/core/SearchServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Test</servlet-name>
+		<servlet-class>core.Test</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/core/Test</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
